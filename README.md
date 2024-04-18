@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img src="https://github.com/amsavarthan/tictactoe/blob/master/assets/banner.png" height="30%" width="100%"/>
 
-## Getting Started
+#### How to play 🕹
 
-First, run the development server:
+1. Go to https://onlinetictactoe.vercel.app (currently server is down)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Create a room or Join an existing room using the room code
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. That's it! 🎉
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Rules 📋
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. The game is played on a 3x3 grid
+2. If you are the creator of a room then you will be **X** else **O**
+3. The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner.
+4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. An adequate version of `node.js` is installed. Here's the adequate version I use :
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```shell
+   $ node -v
+   v12.15.0
+   ```
 
-## Deploy on Vercel
+2. An adequate version of `npm` is installed. Here's the adequate version I use :
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```shell
+   $ npm -v
+   6.14.4
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. An adequate version of `yarn` is installed. Here's the adequate version I use :
+
+   ```shell
+   $ yarn -v
+   1.22.4
+   ```
+
+## Next Steps
+
+1. Clone this repository to your local directory
+
+   ```shell
+   $ git clone https://github.com/amsavarthan/tictactoe.git
+   ```
+
+2. Change your directory to project directory
+
+   ```shell
+   $ cd tictactoe
+   ```
+
+3. Install the required dependencies by executing the command
+
+   ```shell
+   $ yarn install
+   ```
+
+4. Start the app
+
+   ```shell
+   $ yarn start
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+Backed by [tictactoe-server](https://github.com/amsavarthan/tictactoe-server) ✨
